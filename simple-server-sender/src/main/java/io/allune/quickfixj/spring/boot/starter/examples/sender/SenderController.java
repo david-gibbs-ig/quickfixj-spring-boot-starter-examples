@@ -142,7 +142,7 @@ public class SenderController {
 		SessionID sessionID = new SessionID("FIX.4.4", "EXEC", "BANZAI");
 		OnBehalfOfCompID onBehalfOfCompId = new OnBehalfOfCompID("FX");
 		executionReport.set(new TransactTime());
-		executionReport.set(new SettlType(SettlType.REGULAR_FX_SPOT_SETTLEMENT));
+		executionReport.set(new SettlType(SettlType.REGULAR));
 		executionReport.set(new SettlDate("20201016"));
 		executionReport.set(new OrderQty(1000000));
 		executionReport.set(new Spread(0));

@@ -54,43 +54,49 @@
 
         <skipDocker>true</skipDocker>
         <docker.image.prefix>allune</docker.image.prefix>
-        <quickfixj-spring-boot-starter.version>2.10.0</quickfixj-spring-boot-starter.version>
+        <quickfixj-spring-boot-starter.version>3.0.0-SNAPSHOT</quickfixj-spring-boot-starter.version>
+	    <quickfixj.version>3.0.0-SNAPSHOT</quickfixj.version>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>io.allune</groupId>
-                <artifactId>quickfixj-spring-boot-starter</artifactId>
-                <version>${quickfixj-spring-boot-starter.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.allune</groupId>
-                <artifactId>quickfixj-spring-boot-actuator</artifactId>
-                <version>${quickfixj-spring-boot-starter.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.allune</groupId>
-                <artifactId>simple-server</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.allune</groupId>
-                <artifactId>simple-server-with-database</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.allune</groupId>
-                <artifactId>simple-client</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.allune</groupId>
-                <artifactId>simple-client-with-database</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>io.allune</groupId>
+				<artifactId>quickfixj-spring-boot-starter</artifactId>
+				<version>${quickfixj-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.allune</groupId>
+				<artifactId>quickfixj-spring-boot-actuator</artifactId>
+				<version>${quickfixj-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.quickfixj</groupId>
+				<artifactId>quickfixj-messages-all</artifactId>
+				<version>${quickfixj.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.allune</groupId>
+				<artifactId>simple-server</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.allune</groupId>
+				<artifactId>simple-server-with-database</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.allune</groupId>
+				<artifactId>simple-client</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.allune</groupId>
+				<artifactId>simple-client-with-database</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
     <build>
         <plugins>

@@ -16,6 +16,12 @@
             <groupId>io.allune</groupId>
             <artifactId>quickfixj-spring-boot-starter</artifactId>
         </dependency>
+
+		<dependency>
+		    <groupId>org.quickfixj</groupId>
+		    <artifactId>quickfixj-messages-all</artifactId>
+		</dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

@@ -30,6 +30,11 @@
             <artifactId>quickfixj-spring-boot-actuator</artifactId>
         </dependency>
 
+		<dependency>
+		    <groupId>org.quickfixj</groupId>
+		    <artifactId>quickfixj-messages-all</artifactId>
+		</dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
